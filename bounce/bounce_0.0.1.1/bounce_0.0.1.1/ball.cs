@@ -36,55 +36,6 @@ namespace bounce_0._0._1._1
             GY = CoordY + 106;
         }
 
-        public void Move_Old(int hei,int wid)
-        {
-            int ground = hei - 106;
-
-
-            if (AxisX > 0)
-            {
-                if(CoordX < wid- 81)
-                CoordX += 6;
-            }
-
-            if (AxisX < 0)
-            {
-                if(CoordX > 0)
-                CoordX -= 6;
-            }
-
-
-            if (AxisY > 0)
-            {
-              
-                CoordY += 6;
-            }
-
-
-            if (AxisY < 0) 
-                CoordY -= 6;
-
-            if (CoordY < ground)
-            {
-                Weight++;
-                if (Weight > 80)
-                {
-                    if(boost<25)
-                    boost+=0.5f;
-                    if (!(CoordY + boost > ground))
-                        CoordY += boost;
-                    else
-                        CoordY = (ground - CoordY) + CoordY;
-                }
-
-            }
-            else
-            {
-                Weight = 0;
-                boost = 0;
-            }
-             
-        }
 
         public void Move(float hei , float wid, float top , float left)
         {

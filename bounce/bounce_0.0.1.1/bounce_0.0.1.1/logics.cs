@@ -7,49 +7,58 @@ namespace bounce_0._0._1._1
     {
         public Ball InGameBall;
         public Block Env;
+        public Level Environment;
+
+        int hei, wid, top, write;
         
         public Logics()
         {
+            Environment = new Level();
         InGameBall = new Ball();
             Env = new Block();
+
         }
 
-        public bool BallBetweenBlockX()
-        {
-           if(Math.Abs(Env.CoordX-InGameBall.CoordX)<66)
-            return true;
-            return false;
-        }
+        bool found = false;
 
-        public bool BallBetweenBlockY()
+        void Move(int h, int w, int t, int wr)
         {
-            if (Math.Abs(InGameBall.CoordY - Env.CoordY)<66)
-            return true;
-            return false;
+            if(!found)
+            hei = h;
+            wid = w;
+            top = t;
+            write = wr;
+            found = true;
         }
 
         public void GameRun(int Hei, int Wid)
         {
-            if (BallBetweenBlockX())
+            foreach (var bl in Environment.Field)
             {
-                if (InGameBall.GY < Env.CoordY+40)
-                    InGameBall.Move((int)Env.CoordY+40, Wid, 0, 0);
-                if (InGameBall.CoordY >= Env.Ground)
-                    InGameBall.Move(Hei, Wid, Env.Ground, 0);
-            }
-
-            else
-            if (BallBetweenBlockY())
-            {
-                if (InGameBall.WX <= Env.CoordX + 15)
-                    InGameBall.Move(Hei, Env.CoordX + 15, 0, 0);
+                if (Math.Abs(bl.CoordX - InGameBall.CoordX) < 66)
+                {
+                    if (InGameBall.GY < bl.CoordY + 40)
+                        Move((int)bl.CoordY + 40, Wid, 0, 0);
+                    if (InGameBall.CoordY >= bl.Ground)
+                        Move(Hei, Wid, (int)Env.Ground, 0);
+                }
                 else
-                if (InGameBall.CoordX >= Env.Write)
-                    InGameBall.Move(Hei, Wid, 0, Env.Write);            
+                if (Math.Abs(InGameBall.CoordY - bl.CoordY) < 66)
+                {
+                    if (InGameBall.WX <= bl.CoordX + 15)
+                        Move(Hei, (int)bl.CoordX + 15, 0, 0);
+                    else
+                    if (InGameBall.CoordX >= bl.Write)
+                        Move(Hei, Wid, 0, (int)bl.Write);
+                }
+                else
+                {
+                    Move(Hei, Wid, 0, 0);
+                }
             }
-            else
-                InGameBall.Move(Hei, Wid, 0, 0);
-        }
+            InGameBall.Move(hei,wid,top,write);
+            found = false;
+        }   
 
     }
 }

@@ -127,8 +127,11 @@ namespace bounce_0._0._1._1
             //e.Graphics.DrawLine(new Pen(Color.Black), 0, game.Env.CoordY, Width, game.Env.CoordY);
 
             //e.Graphics.DrawImage(ball1.Texture, ball1.CoordinateX, ball1.CoordinateY);
-            e.Graphics.DrawImage(game.Env.Texture, game.Env.CoordX, game.Env.CoordY);
-            e.Graphics.DrawImage(game.InGameBall.Texture,game.InGameBall.CoordX, game.InGameBall.CoordY);
+            foreach(var bl in game.Environment.Field)
+            { 
+            e.Graphics.DrawImage(bl.Texture, bl.CoordX, bl.CoordY);
+            }
+                e.Graphics.DrawImage(game.InGameBall.Texture,game.InGameBall.CoordX, game.InGameBall.CoordY);
         }
 
         private void timer1_Tick(object sender, EventArgs e)
