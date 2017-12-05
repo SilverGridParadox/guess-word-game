@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bounce_0.0.1.1", "bounce_0.0.1.1\bounce_0.0.1.1.csproj", "{BA0B15FF-7541-4DFE-82D7-7EB4BA107CB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bounce_0.0.1.1_test", "Bounce_0.0.1.1_test\Bounce_0.0.1.1_test.csproj", "{BB3CBF7E-6659-494B-856B-EBE2F3BF4D73}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BA0B15FF-7541-4DFE-82D7-7EB4BA107CB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA0B15FF-7541-4DFE-82D7-7EB4BA107CB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA0B15FF-7541-4DFE-82D7-7EB4BA107CB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA0B15FF-7541-4DFE-82D7-7EB4BA107CB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB3CBF7E-6659-494B-856B-EBE2F3BF4D73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB3CBF7E-6659-494B-856B-EBE2F3BF4D73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB3CBF7E-6659-494B-856B-EBE2F3BF4D73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB3CBF7E-6659-494B-856B-EBE2F3BF4D73}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {97EF7C7A-7605-40F3-B8DA-107B50C4EDC9}
+	EndGlobalSection
+EndGlobal
