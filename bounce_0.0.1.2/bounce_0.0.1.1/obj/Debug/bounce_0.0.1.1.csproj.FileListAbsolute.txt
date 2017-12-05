@@ -1,0 +1,11 @@
+D:\bounce\bounce_0.0.1.1\bounce_0.0.1.1\bin\Debug\bounce_0.0.1.1.exe.config
+D:\bounce\bounce_0.0.1.1\bounce_0.0.1.1\bin\Debug\bounce_0.0.1.1.exe
+D:\bounce\bounce_0.0.1.1\bounce_0.0.1.1\bin\Debug\bounce_0.0.1.1.pdb
+D:\bounce\bounce_0.0.1.1\bounce_0.0.1.1\obj\Debug\bounce_0.0.1.1.csprojResolveAssemblyReference.cache
+D:\bounce\bounce_0.0.1.1\bounce_0.0.1.1\obj\Debug\bounce_0._0._1._1.Properties.Resources.resources
+D:\bounce\bounce_0.0.1.1\bounce_0.0.1.1\obj\Debug\bounce_0.0.1.1.csproj.GenerateResource.Cache
+D:\bounce\bounce_0.0.1.1\bounce_0.0.1.1\obj\Debug\bounce_0.0.1.1.csproj.CoreCompileInputs.cache
+D:\bounce\bounce_0.0.1.1\bounce_0.0.1.1\obj\Debug\bounce_0.0.1.1.exe
+D:\bounce\bounce_0.0.1.1\bounce_0.0.1.1\obj\Debug\bounce_0.0.1.1.pdb
+D:\bounce\bounce_0.0.1.1\bounce_0.0.1.1\obj\Debug\bounce_0._0._1._1.DAOForm.resources
+D:\bounce\bounce_0.0.1.1\bounce_0.0.1.1\obj\Debug\bounce_0._0._1._1.GameWindow.resources
